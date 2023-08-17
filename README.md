@@ -49,6 +49,6 @@ The database used was postgres, it has a docker-compose.yml file that raises a c
 10 - To test in Postman import a collection <b>desafio-usedrip.postman_collection.json</b> which is in the directory <b>/drip-bank-transfer</b> 
 
 
-# Divida Técnica
+# technical debt
 
 There's an error displaying the swagger, I've already reviewed the dependencies and also the configuration, but I couldn't find it, it must be some incompatibility with kotlin.
