@@ -1,15 +1,15 @@
 # Challenge, Senior Java Developer - Andrelino
 <br>
-Background 
+# Background 
 <br>
 Model in which you're gonna operate: Banks have customers. Customers have accounts. Accounts hold money. 
 Transfers are done between accounts. Account holds a list of all transfers. 
 <br>
 There can be two types of transfers: 
 <br>
-* Intra-bank transfers, between accounts of the same bank. They don't have commissions, they don't have limits and they always succeed. 
+Intra-bank transfers, between accounts of the same bank. They don't have commissions, they don't have limits and they always succeed. 
 <br>
-* Inter-bank transfers, between accounts in different banks. They have R$5 commissions, they have a limit of R$5000 per transfer and they have a 30% chance of failure. 
+Inter-bank transfers, between accounts in different banks. They have R$5 commissions, they have a limit of R$5000 per transfer and they have a 30% chance of failure. 
 <br>
 Part 1 - Define a set of data structures to accurately reflect the described model. Make sure that new type of transfers can be added with minimal effort.
 <br>
@@ -20,6 +20,7 @@ Expose the Transfer Agent functionality through a rest controller.
 For this test scope consider that the transfer agent holds the banks. 
 <br>
 # Back-end API
+<br>
 Developed with the Spring ecosystem, using all the ease of spring boot, automated tests. It has crud for creating customers, accounts, banks and also a registration end point to facilitate the creation of the challenge, the transfer agent.
 <br>
 The database used was postgres, it has a docker-compose.yml file that raises a container with the database, the API access configuration to the database is in the project, in the resource package, application.properties one of the main configuration points, the embedded server will go up on the port  8001.
