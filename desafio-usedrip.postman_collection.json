@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "f5745e80-6f2c-420d-8700-553b5e1e1dfe",
+		"name": "desafio-usedrip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3713962"
+	},
+	"item": [
+		{
+			"name": "bank",
+			"item": [
+				{
+					"name": "BankfindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/bank",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BankFindById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/bank/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"bank",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\" : 237,\n    \"name\" : \"Bradesco\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/bank",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"bank"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/account",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/accont/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"accont",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Andrelino\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/client",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cpf",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/client/cpf/12345632152",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"client",
+								"cpf",
+								"12345632152"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountCode\" : 15,\n    \"accountName\" : \"Pedro Ludovico\",\n    \"bankCode\" : 341,\n    \"bankNome\" : \"Banco Itau\",\n    \"clientNome\" : \"Joselito\",\n    \"clientCPF\" : \"444.444.444-44\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transfer",
+			"item": [
+				{
+					"name": "agentTransfer",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
